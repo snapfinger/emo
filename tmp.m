@@ -45,7 +45,7 @@ clc;
 
 U2 = result(2).U;
 sub_coef = U2{3, 1};
-labels = [zeros(20, 1); ones(20, 1)];
+labels = [zeros(n_ctl_train, 1); ones(n_sui_train, 1)];
 gscatter(sub_coef(:, 1), sub_coef(:, 2), labels);
 % scatter(1: 30, sub_coef(:, 1));
 
